@@ -72,7 +72,7 @@ dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git branc
 
 - git checkout nombre de rama
 - touch hola.html
-- echo del contenido anterior
+- nano hola.html escribir el codigo anterior
 
 *Salida*
 ```code 
@@ -83,3 +83,67 @@ dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ touch hol
 dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ nano hola.html
 
 ```
+
+## Moverse a la rama principal y crear el fichero adios.html > Sustituye nombre_alumno por tu nombre.
+
+**Comandos**
+
+- git checkout main
+- touch adios.html
+- nano adios.html (escribri el codigo y sustituir el nombre)
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ touch adios.html
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ nano adios.html
+ GNU nano 6.2                             adios.html                                       
+html
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Adios </title>
+</head>
+<body>
+<h1 align="center" >Adios soy un título </h1>
+<hr>
+<p> Adios soy el alumno Adonay </p>
+</body>
+</html>
+```
+## Crea el commit con un mensaje descriptivo, sube los cambios a la rama actual.
+
+**Comados:**
+- git add .
+- git commit -m"mensaje descriptivo"
+- git push
+
+*Salida:*
+```code
+am@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git add .
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"mensaje descriptivo"
+[main 2e99202] mensaje descriptivo
+ 3 files changed, 77 insertions(+), 1 deletion(-)
+ create mode 100644 adios.html
+ create mode 100644 hola.html
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
+Enumerando objetos: 8, listo.
+Contando objetos: 100% (8/8), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos: 100% (7/7), listo.
+Escribiendo objetos: 100% (8/8), 1.58 KiB | 807.00 KiB/s, listo.
+Total 8 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+ * [new branch]      main -> main
+
+```
+
+## Lista las ramas actuales ,Realizar la mezcla en el repositorio principal.
+
+**Comando:**
+
+- git branch
+- git merge develop
+
+*Salida:*
+
