@@ -372,3 +372,28 @@ dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commi
  create mode 100644 Estamos_a_punto_de_terminar.html
 
 ```
+## Muevete a la rama develop, y realiza la mezcla con la rama feature-2.
+
+**Comandos:**
+- git checkout develop
+- git merge feature-2
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git checkout develop
+Cambiado a rama 'develop'
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git merge feature-2
+Actualizando 7fd7edf..7c56476
+Fast-forward
+ Estamos_a_punto_de_terminar.html |  11 ++
+ README.md                        | 341 ++++++++++++++++++++++++++++++++++++++-
+ adios.html                       |  13 ++
+ hola.html                        |  13 ++
+ 4 files changed, 377 insertions(+), 1 deletion(-)
+ create mode 100644 Estamos_a_punto_de_terminar.html
+ create mode 100644 adios.html
+ create mode 100644 hola.html
+
+```
+
+##
