@@ -303,4 +303,59 @@ Date:   Wed Oct 18 14:58:38 2023 +0100
 
 ```
 
-##
+## Lista todos los tags(etiquetas que existan) Crea una nueva etiqueta (tag) de nombre v.1 y sube los cambios.
+**Comandos:**
+- git tag
+- git tag v.1
+
+*Salida*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git tag
+ls
+v.1
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git tag v.1
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git add .
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"seguimos trabajando"
+[main 20d6896] seguimos trabajando
+ 1 file changed, 158 insertions(+), 1 deletion(-)
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (3/3), 2.37 KiB | 2.37 MiB/s, listo.
+Total 3 (delta 0), reusados 0 (delta 0), pack-reusados 0
+To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+   71d1bbc..20d6896  main -> main
+
+```
+hice los pasos al reves primero la cree y luego las liste
+
+## Crea la feature-2 y muevete a esta.
+ **Comandos**:
+ - git branch feature-2
+ - git checkout feature-2
+
+*Salida:*
+```code
+am@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git branch feature-2
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git checkout feature-2
+M	README.md
+Cambiado a rama 'feature-2'
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ touch  Estamos_a_punto_de_terminar.html
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ nano  Estamos_a_punto_de_terminar.html
+  GNU nano 6.2            Estamos_a_punto_de_terminar.html                      
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/s>
+<html>
+<head>
+<title>Terminando </title>
+</head>
+<body>
+<h1 align="center" >Apunto de terminar </h1>
+<hr>
+<p> Esto se esta acabando Adonay </p>
+</body>
+</html>
+
+```
+
