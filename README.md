@@ -450,3 +450,190 @@ Fast-forward
 - git add .
 - git commit -m"tag v.2"
 - git push
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git tag v.2
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"a"
+[main c06ad16] a
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+am@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (3/3), 515 bytes | 515.00 KiB/s, listo.
+Total 3 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+   20d6896..c06ad16  main -> main
+
+```
+## Muestra todos los cambios realizados en el repositorio. Muestra todos los commits realizados
+
+**Comandos:**
+- git diff 
+- git log
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git log
+commit c06ad16c2e96940344c25ca86bee2dc13001a29b (HEAD -> main, origin/main)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:57:53 2023 +0100
+
+    a
+
+commit 57a14e4340026143e84e2465cd63fbb99886db24 (tag: v.2, origin/develop, develop)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:54:04 2023 +0100
+
+    a
+
+commit c1b8e25e78a682f2017f85c18f4da10a0dbcce64
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:49:56 2023 +0100
+
+    subimos a rama develop
+
+commit 7c56476714ce6047eb35810d76ad7525565b1730 (origin/feature-2, feature-2)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:46:18 2023 +0100
+
+    a
+
+commit e30c108c6bdffa8729834772b2c8053e27086070
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:43:18 2023 +0100
+
+    nueva rama
+
+commit 20d68967e07b00e5d7e37ffe08a39a4fd7ff81a2
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:38:16 2023 +0100
+
+    seguimos trabajando
+
+commit 71d1bbc60fc43cecf25de0e4984767ae768cd365 (tag: v.1, tag: ls)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:25:31 2023 +0100
+
+    subir cambios
+
+commit 2e99202ad409524009c600f86ab3a7970c024309
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:17:33 2023 +0100
+
+    mensaje descriptivo
+
+commit 7fd7edf071803d364557b15eb2ee713595f49e7a
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 14:58:38 2023 +0100
+
+    primer commit
+(END)
+
+
+```
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git diff
+diff --git a/README.md b/README.md
+index cf309e7..a43be9b 100644
+--- a/README.md
++++ b/README.md
+@@ -450,3 +450,91 @@ Fast-forward
+ - git add .
+ - git commit -m"tag v.2"
+ - git push
++
++*Salida:*
++```code
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git tag v.2
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"a"
++[main c06ad16] a
++ 1 file changed, 18 insertions(+), 1 deletion(-)
++am@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
++Enumerando objetos: 5, listo.
++Contando objetos: 100% (5/5), listo.
++Compresión delta usando hasta 12 hilos
++Comprimiendo objetos: 100% (3/3), listo.
++Escribiendo objetos: 100% (3/3), 515 bytes | 515.00 KiB/s, listo.
++Total 3 (delta 2), reusados 0 (delta 0), pack-reusados 0
++remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
++To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
++   20d6896..c06ad16  main -> main
++
++```
++## Muestra todos los cambios realizados en el repositorio. Muestra todos los commits realizados
++
++**Comandos:**
++- git diff 
++- git log
++
++*Salida:*
++```code
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git log
++commit c06ad16c2e96940344c25ca86bee2dc13001a29b (HEAD -> main, origin/main)
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:57:53 2023 +0100
++
++    a
++
++commit 57a14e4340026143e84e2465cd63fbb99886db24 (tag: v.2, origin/develop, develop)
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:54:04 2023 +0100
++
++    a
++
++commit c1b8e25e78a682f2017f85c18f4da10a0dbcce64
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:49:56 2023 +0100
++
++    subimos a rama develop
++
++commit 7c56476714ce6047eb35810d76ad7525565b1730 (origin/feature-2, feature-2)
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:46:18 2023 +0100
++
++    a
++
++commit e30c108c6bdffa8729834772b2c8053e27086070
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:43:18 2023 +0100
++
++    nueva rama
++
++commit 20d68967e07b00e5d7e37ffe08a39a4fd7ff81a2
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:38:16 2023 +0100
++
++    seguimos trabajando
++
++commit 71d1bbc60fc43cecf25de0e4984767ae768cd365 (tag: v.1, tag: ls)
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:25:31 2023 +0100
++
++    subir cambios
++
++commit 2e99202ad409524009c600f86ab3a7970c024309
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 15:17:33 2023 +0100
++
++    mensaje descriptivo
++
++commit 7fd7edf071803d364557b15eb2ee713595f49e7a
++Author: adogonz23 <adogonzalez75@gmail.com>
++Date:   Wed Oct 18 14:58:38 2023 +0100
++
++    primer commit
++(END)
++
++
++```
++```code
++
++```
+\ No newline at end of file
+(END)
+
+```
