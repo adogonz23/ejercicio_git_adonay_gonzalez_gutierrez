@@ -396,4 +396,40 @@ Fast-forward
 
 ```
 
-##
+## sube los cambios de la rama develop a Github.
+
+**Comandos:**
+
+- git add .
+- git commit -m ""
+- git push --set-upstream origin develop
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push --set-upstream origin develop
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (3/3), 559 bytes | 559.00 KiB/s, listo.
+Total 3 (delta 2), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/adogonz23/ejercicio_git_adonay_gonzalez_gutierrez/pull/new/develop
+remote: 
+To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+ * [new branch]      develop -> develop
+Rama 'develop' configurada para hacer seguimiento a la rama remota 'develop' de 'origin'.
+
+```
+## Cambia a la rama principal, realiza la mezcla con la rama develop.
+
+**Comandos**
+- git chekout main
+- git merge develop
+
+*Salida:*
+```code
+
+```
