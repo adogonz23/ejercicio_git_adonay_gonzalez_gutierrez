@@ -115,7 +115,7 @@ html
 **Comados:**
 - git add .
 - git commit -m"mensaje descriptivo"
-- git push
+- git push origin main (me equivoque al escribir los comandos e hice un push de todo )
 
 *Salida:*
 ```code
@@ -146,4 +146,161 @@ To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
 - git merge develop
 
 *Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git branch
+  develop
+* main
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git merge develop
+Ya está actualizado.
+```
+## Sube los cambios al repositorio a tu cuenta de Github.
 
+**Comandos:**
+ - git add .
+ - git commit -m"mensaje"
+ - git push
+
+*salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git add .
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"subir cambios "
+[main 71d1bbc] subir cambios
+ 1 file changed, 66 insertions(+), 2 deletions(-)
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
+Enumerando objetos: 5, listo.
+Contando objetos: 100% (5/5), listo.
+Compresión delta usando hasta 12 hilos
+Comprimiendo objetos: 100% (3/3), listo.
+Escribiendo objetos: 100% (3/3), 1.02 KiB | 1.02 MiB/s, listo.
+Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+   2e99202..71d1bbc  main -> main
+
+```
+
+## Muestra todos los cambios realizados.
+**Comados:**
+
+- git diff
+
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git diff
+diff --git a/README.md b/README.md
+index ae155b3..0815be4 100644
+--- a/README.md
++++ b/README.md
+@@ -115,7 +115,7 @@ html
+ **Comados:**
+ - git add .
+ - git commit -m"mensaje descriptivo"
+-- git push
++- git push origin main (me equivoque al escribir los comandos e hice un push de todo )
+ 
+ *Salida:*
+ ```code
+@@ -146,4 +146,70 @@ To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
+ - git merge develop
+ 
+ *Salida:*
++```code
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git branch
++  develop
++* main
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git merge develop
++Ya está actualizado.
++```
++## Sube los cambios al repositorio a tu cuenta de Github.
++
++**Comandos:**
++ - git add .
++ - git commit -m"mensaje"
++ - git push
++
++*salida:*
++```code
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git add .
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"subir cambios "
++[main 71d1bbc] subir cambios
++ 1 file changed, 66 insertions(+), 2 deletions(-)
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git push
++Enumerando objetos: 5, listo.
++Contando objetos: 100% (5/5), listo.
++Compresión delta usando hasta 12 hilos
++Comprimiendo objetos: 100% (3/3), listo.
++Escribiendo objetos: 100% (3/3), 1.02 KiB | 1.02 MiB/s, listo.
++Total 3 (delta 1), reusados 0 (delta 0), pack-reusados 0
++remote: Resolving deltas: 100% (1/1), completed with 1 local object.
++To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
++   2e99202..71d1bbc  main -> main
++
++```
++
++## Muestra todos los cambios realizados.
++**Comados:**
+ 
++- git diff
++
++*Salida:*
++```code
++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git diff
++diff --git a/README.md b/README.md
++index ae155b3..30d04d8 100644
++--- a/README.md
+++++ b/README.md
++@@ -115,7 +115,7 @@ html
++ **Comados:**
++ - git add .
++ - git commit -m"mensaje descriptivo"
++-- git push
+++- git push origin main (me equivoque al escribir los comandos e hice un push de todo )
++ 
++ *Salida:*
++ ```code
++@@ -146,4 +146,21 @@ To github.com:adogonz23/ejercicio_git_adonay_gonzalez_gutierrez.git
++ - git merge develop
++ 
++ *Salida:*
+++```code
+++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git branch
+++  develop
+++* main
+++dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git merge develop
+++Ya está actualizado.
+++```
++
++```
+(END)
+
+
+```
+## Lista ahora los últimos cambios que se han producido en el repositorio, es decir, los últimos commits que han realizado en el repositorio.
+
+**Comandos:**
+- git log
+
+*Salida*:
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git log
+commit 71d1bbc60fc43cecf25de0e4984767ae768cd365 (HEAD -> main, origin/main)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:25:31 2023 +0100
+
+    subir cambios
+
+commit 2e99202ad409524009c600f86ab3a7970c024309
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 15:17:33 2023 +0100
+
+    mensaje descriptivo
+
+commit 7fd7edf071803d364557b15eb2ee713595f49e7a (develop)
+Author: adogonz23 <adogonzalez75@gmail.com>
+Date:   Wed Oct 18 14:58:38 2023 +0100
+
+    primer commit
+
+```
+
+##
