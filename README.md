@@ -358,4 +358,17 @@ dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ nano  Est
 </html>
 
 ```
+## Realiza el commit y sube los cambios.
+**Comandos:**
+- git add .
+- git commit -m
 
+*Salida:*
+```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git add .
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git commit -m"nueva rama"
+[feature-2 e30c108] nueva rama
+ 2 files changed, 67 insertions(+), 1 deletion(-)
+ create mode 100644 Estamos_a_punto_de_terminar.html
+
+```
