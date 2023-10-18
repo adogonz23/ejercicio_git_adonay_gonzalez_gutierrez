@@ -431,5 +431,22 @@ Rama 'develop' configurada para hacer seguimiento a la rama remota 'develop' de 
 
 *Salida:*
 ```code
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git checkout main
+Cambiado a rama 'main'
+Tu rama está actualizada con 'origin/main'.
+dam@a108pc01:~/Documentos/ETS/ejercicio_git_adonay_gonzalez_gutierrez$ git merge develop
+Actualizando 20d6896..57a14e4
+Fast-forward
+ Estamos_a_punto_de_terminar.html |  11 ++++
+ README.md                        | 131 ++++++++++++++++++++++++++++++++++++++-
+ 2 files changed, 141 insertions(+), 1 deletion(-)
+ create mode 100644 Estamos_a_punto_de_terminar.html
 
 ```
+## Realiza el tag con el nombre v.2. y sube los cambios.
+
+**Comandos:**
+- git tag v.2
+- git add .
+- git commit -m"tag v.2"
+- git push
